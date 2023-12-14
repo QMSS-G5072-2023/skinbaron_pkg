@@ -22,6 +22,10 @@ sphinx-rtd-theme = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
 
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.2.6"
+sphinxcontrib-napoleon = "^0.7"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
