@@ -1,14 +1,16 @@
-# Required
 version: 2
-
-# Image to use
 build:
-  image: testing
+  os: ubuntu-20.04  # <- add this line
+  tools:
+    python: "3.10"
+    
+sphinx:
+  configuration: docs/conf.py
 
-# Configuration
+formats: all
+
 python:
-  version: 3.9
+  version: 3.8
   install:
     - requirements: docs/requirements.txt
-    - method: pip
-      path: .
+
