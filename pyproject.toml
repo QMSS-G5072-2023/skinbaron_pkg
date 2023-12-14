@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "skinbaron-pkg"
+version = "0.1.0"
+description = "A package for getting CSGO market data and perform analysis on the skinbaron website through its API"
+authors = ["Qingxuan Guo <qg2218@columbia.edu>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
