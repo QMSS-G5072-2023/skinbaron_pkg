@@ -92,6 +92,7 @@ class SkinBaronAPI:
 if __name__ == "__main__":
     api_key = "api_key_here"
     app_id = "skinbaron_account_app_id"
+
     api = SkinBaronAPI(api_key, app_id)
 
     price_list = api.get_price_list()
@@ -99,7 +100,10 @@ if __name__ == "__main__":
     best_deals = api.best_deals(50)
     newest_sales = api.newest_sales_30_days("AK-47 | Redline", False, False)
 
-    print(price_list)
+    print(price_list.keys)
+    # print('=========================')
+    # for key, value in newest_sales.items():
+    #     print(key)
     print(newest_items)
     print(best_deals)
     print(newest_sales)
